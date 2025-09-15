@@ -23,5 +23,4 @@ initialState: {
 })
 
 export const { userInfo } = UserSlice.actions
-
 export default UserSlice.reducer

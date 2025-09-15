@@ -85,9 +85,9 @@
 }
 
 .chart-container {
-  width: 90%;       /* full width of parent */
-  height: 90%;      /* full height of parent */
-  min-height: 300px; /* optional minimum height */
+  width: 90%;      
+  height: 90%;     
+  min-height: 300px; 
 }
 
 #comp-15 {

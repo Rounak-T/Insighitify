@@ -15,16 +15,19 @@ import BarGraph from "../Components/BarGraph";
 import LineGraph from "../Components/LineGraph";
 
 export default function Dashboard() {
+
   const [isExpensePopup, setIsExpensePopup] = useState(false);
   const [AddIncomePopup, setAddIncomePopup] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   const token = localStorage.getItem("token");
 
   const [totalSubsCost, setTotalSubsCost] = useState(0);
   const [recentDues, setRecentDues] = useState([]);
-
   const dispatch = useDispatch();
+
   const { list, status } = useSelector((state) => state.subs);
+  
   const { name, income, savingsgoal, expense , monthlyStats } = useSelector(
     (state) => state.user
   );

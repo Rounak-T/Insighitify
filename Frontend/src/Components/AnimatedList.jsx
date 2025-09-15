@@ -22,7 +22,7 @@ const AnimatedItem = ({ children, delay = 0, index, onMouseEnter, onClick }) => 
 };
 
 const AnimatedList = ({
-  items = [], // now expecting array of objects
+  items = [], 
   onItemSelect,
   showGradients = true,
   enableArrowNavigation = true,
@@ -96,19 +96,18 @@ const AnimatedList = ({
       <div ref={listRef} className={`scroll-list ${!displayScrollbar ? 'no-scrollbar' : ''}`} onScroll={handleScroll}>
         {items.map((item, index) => (
           <AnimatedItem
-            key={item._id || index} // prefer unique ID from DB
+            key={item._id || index} 
             delay={0.1}
             index={index}
             onMouseEnter={() => setSelectedIndex(index)}
             onClick={() => {
               setSelectedIndex(index);
               if (onItemSelect) {
-                onItemSelect(item, index); // pass full object here
+                onItemSelect(item, index);
               }
             }}
           >
             <div className={`item ${selectedIndex === index ? 'selected' : ''} ${itemClassName}`}>
-              {/* show subscription name */}
               <p>{item.name || `Item ${index + 1}`}</p>
             </div>
           </AnimatedItem>

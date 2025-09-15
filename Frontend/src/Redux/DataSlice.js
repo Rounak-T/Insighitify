@@ -1,6 +1,5 @@
 import { createSlice , createAsyncThunk  } from '@reduxjs/toolkit';
 
-// METHOD TO FETCH SUBS
 export const fetchSubs = createAsyncThunk(
   "subs/fetchSubs",
   async (token) => {
@@ -9,7 +8,6 @@ export const fetchSubs = createAsyncThunk(
     });
     if (res.ok) {
         const data = await res.json();
-  
     return data;
     }
     else {
@@ -17,8 +15,6 @@ export const fetchSubs = createAsyncThunk(
     }
   }
 );
-
-//CREATE SIMILAR METHOD FOR UPDATE AND DELETE TOO - Create another function for update like fetchsubs write its logic then directly addcases directly inside extrareducers
 
 export const DataSlice = createSlice({
   name: 'subs',
@@ -34,7 +30,6 @@ export const DataSlice = createSlice({
       })
       .addCase(fetchSubs.fulfilled, (state, action) => {
         state.status = "succeeded";
-      
         state.list = action.payload;
       })
       .addCase(fetchSubs.rejected, (state) => {

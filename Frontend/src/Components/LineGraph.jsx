@@ -22,7 +22,7 @@ export default function LineGraph() {
         }}
         options={{
           responsive: true,
-          maintainAspectRatio: false, // <-- allow it to stretch
+          maintainAspectRatio: false, 
           scales: {
             y: { beginAtZero: true },
           },

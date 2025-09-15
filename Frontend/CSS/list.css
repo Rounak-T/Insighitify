@@ -24,7 +24,3 @@
 .item.selected {
   animation: scale-up-center-normal 1s ease 0s 1 normal none; 
 }
-/* 
-.item.selected p {
-  color: white !important;
-} */
