@@ -1,0 +1,107 @@
+.homeBody {
+    position: absolute;
+    top: 60px;
+    width: 80%;
+}
+
+.itemHolder {
+    box-shadow: 0 0 15px #2425484a;
+    border-radius: 15px;
+    height: 50vh;
+    margin: 50px 0px 50px 0px;
+    padding: 50px;
+}
+
+.itemHolder * {
+    margin: 40px 0px 0px 0px;
+    color: #161853;
+}
+
+.itemHolder button {
+    background-color: #161853;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+}
+
+.itemHolder button svg {
+    margin: 0px;
+    stroke: white;
+    stroke-width: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.cardsHolder {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes scale-up-center-normal {0% { transform: scale(0.9); } 100% { transform: scale(1);} }
+
+.itemHolder button:hover {
+    color: white;
+    background-color:#292c6d;
+    animation: scale-up-center-normal 1s ease 0s 1 normal none; 
+}
+
+@media screen and (min-width: 937px) and (max-width: 1436px) {
+    .cardsHolder {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3vw;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+@media screen and (max-width: 936px) {
+    .cardsHolder {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .itemHolder {
+        box-shadow: 0 0 15px #2425484a;
+        border-radius: 15px;
+        height: fit-content;
+    }
+    .itemHolder * {
+    color: #161853;
+    }
+    .itemHolder button {
+    background-color: #161853;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    font-size: small;
+}
+
+.itemHolder button svg {
+    margin: 0px;
+    stroke: white;
+    stroke-width: 0;
+    height: 1rem;
+    width: 1rem;
+}
+}

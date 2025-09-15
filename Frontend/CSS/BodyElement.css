@@ -1,0 +1,44 @@
+
+.cards {
+    box-shadow: 0 0 15px #2425484a;
+    border-radius: 15px;
+    padding: 15px 0px 15px 15px;
+    height: 260px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.svg {
+    background-color: white;
+    width: 45px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 937px) and (max-width: 1436px) {
+    .cards {
+    box-shadow: 0 0 15px #2425484a;
+    border-radius: 15px;
+    padding: 15px 0px 15px 15px;
+    height: 280px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+}
+
+@media screen and (max-width: 936px) {
+    .cards {
+    box-shadow: 0 0 15px #2425484a;
+    border-radius: 15px;
+    padding: 15px 0px 15px 15px;
+    height: 270px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+}

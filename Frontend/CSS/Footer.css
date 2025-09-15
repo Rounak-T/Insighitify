@@ -1,0 +1,29 @@
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px#1618532d;
+    border-radius: 5px;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+}
+
+p {
+    font-weight:600;
+    color: #161853;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+}
+
+ul a {
+    text-decoration: none;
+    color: #161853;
+    padding: 5px;
+    margin: 5px;
+}

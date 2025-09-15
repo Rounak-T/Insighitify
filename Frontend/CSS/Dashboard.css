@@ -1,0 +1,96 @@
+.container {
+    position: absolute;
+    top: 50px;
+    display: grid;
+    grid-template-areas:"hr hr hr hr"
+                        "pr1 pr2 pr3 pr4"
+                        "sa sa sa sa"
+                        "sa sa sa sa"
+                        "sa sa sa sa"
+                        "sav sav sav sav"
+                        "as ds ud mf"
+                        ;
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.comp {
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 15px 0 #03030351;
+}
+
+#comp-1 {
+    grid-area: hr;
+    box-shadow: none;
+}
+
+#comp-2 {
+    grid-area: pr1;
+}
+
+#comp-3 {
+    grid-area: pr2;
+}
+
+#comp-4 {
+    grid-area: pr3;
+}
+
+#comp-5 {
+    grid-area: pr4;
+}
+
+#comp-9 {
+    grid-area: as;
+}
+
+#comp-10 {
+    grid-area: ud;
+}
+
+#comp-11 {
+    grid-area: mf;
+}
+
+#comp-12 {
+    grid-area: sa;
+}
+
+#comp-6 {
+    border: 1px solid #1618538e;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#comp-11 button {
+    background-color:#161853;
+    color: rgb(255, 251, 235);
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+#comp-11 div {
+    margin-top: 25px;
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+#comp-13 {
+    grid-area: sav;
+    height: 55vh;
+}
+
+.chart-container {
+  width: 90%;       /* full width of parent */
+  height: 90%;      /* full height of parent */
+  min-height: 300px; /* optional minimum height */
+}
+
+#comp-15 {
+    grid-area: ds;
+}
+
